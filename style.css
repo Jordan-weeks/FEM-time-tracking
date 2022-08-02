@@ -1,0 +1,72 @@
+
+/* basic reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+:root{
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue-play: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-self-care: hsl(43, 84%, 65%);
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+    --font-family-primary: 'Rubik', sans-serif;
+
+    --font-family-body: var(--font-family-primary);
+    --fw-regular:400;
+    --fw-semi-bold:500;
+    --fw-bold:600;
+}
+body{
+    background-color: var(--very-dark-blue);
+    font-family: var(--font-family-body);
+    color: aliceblue;
+}
+main{
+  display: grid;
+  padding: 10em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3em;  
+}
+.accent{
+  background-color: var(--light-red-work);
+  border-radius: 15px;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+.accent>svg{
+
+  position: relative;
+  right: 10px;
+  top: -10px;
+  overflow: hidden;
+}
+.info{
+  background-color: var(--dark-blue);
+}
